@@ -1,0 +1,23 @@
+<resources>
+    <!-- Зеленая палитра -->
+    <color name="primary">#10B981</color>
+    <color name="primary_dark">#059669</color>
+    <color name="primary_light">#D1FAE5</color>
+
+    <color name="secondary">#6366F1</color>
+    <color name="accent">#059669</color>
+    <color name="error">#EF4444</color>
+
+    <!-- Текст -->
+    <color name="text_primary">#1F2937</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Фоны -->
+    <color name="background">#F8FAFC</color>
+    <color name="surface">#FFFFFF</color>
+
+    <!-- Градиенты -->
+    <color name="gradient_start">#10B981</color>
+    <color name="gradient_end">#059669</color>
+</resources>

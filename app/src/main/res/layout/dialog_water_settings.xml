@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚙️ Настройки воды"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1F2937"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Дневной лимит воды (мл)"
+        android:textSize="16sp"
+        android:textColor="#374151"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etWaterGoal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="4000"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/btnQuick1500"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="1500"
+            android:textSize="12sp"
+            android:background="@drawable/button_water_unselected"
+            android:textColor="#6B7280"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnQuick2000"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="2000"
+            android:textSize="12sp"
+            android:background="@drawable/button_water_unselected"
+            android:textColor="#6B7280"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"/>
+
+        <Button
+            android:id="@+id/btnQuick3000"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="3000"
+            android:textSize="12sp"
+            android:background="@drawable/button_water_unselected"
+            android:textColor="#6B7280"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"/>
+
+        <Button
+            android:id="@+id/btnQuick4000"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="4000"
+            android:textSize="12sp"
+            android:background="@drawable/button_water_unselected"
+            android:textColor="#6B7280"
+            android:layout_marginStart="4dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Рекомендуется: 2000-4000 мл в день"
+        android:textSize="12sp"
+        android:textColor="#6B7280"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/card_background">
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚙️ Настройка нормы калорий"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1F2937"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Поле ввода -->
+    <EditText
+        android:id="@+id/etCalorieGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите дневную норму калорий"
+        android:inputType="number"
+        android:padding="16dp"
+        android:background="@drawable/edittext_background"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Быстрые кнопки -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnQuick1500"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1500"
+            android:textSize="14sp"
+            android:background="#D1FAE5"
+            android:textColor="#10B981"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/btnQuick2000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2000"
+            android:textSize="14sp"
+            android:background="#10B981"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/btnQuick2500"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3000"
+            android:textSize="14sp"
+            android:background="#D1FAE5"
+            android:textColor="#10B981"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <!-- Подсказка -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💡 Рекомендуемые значения: 1500-3000 ккал в день"
+        android:textSize="12sp"
+        android:textColor="#6B7280"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>

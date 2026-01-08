@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/item_quick_food_bg"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/tvEmoji"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="🥣"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Овсяная каша"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#1F2937"/>
+
+        <TextView
+            android:id="@+id/tvDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100г • 88 ккал"
+            android:textSize="12sp"
+            android:textColor="#6B7280"/>
+
+        <TextView
+            android:id="@+id/tvNutrition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Б: 3г, У: 15г, Ж: 2г"
+            android:textSize="11sp"
+            android:textColor="#9CA3AF"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="✨"
+        android:textSize="16sp"
+        android:background="@drawable/button_add_quick"
+        android:layout_marginEnd="4dp"/>
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="✏️"
+        android:textSize="16sp"
+        android:background="@drawable/button_edit_quick"
+        android:layout_marginEnd="4dp"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="🗑️"
+        android:textSize="16sp"
+        android:background="@drawable/button_delete_quick"/>
+
+</LinearLayout>

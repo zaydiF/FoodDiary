@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💧 Трекер воды"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1F2937"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvCurrentWater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 / 4000 мл"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#60A5FA"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressWater"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:progress="0"
+        android:max="100"
+        android:progressTint="#60A5FA"
+        android:background="#E5E7EB"
+        android:layout_marginBottom="24dp"
+        android:padding="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnAdd250ml"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="+250 мл"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_water_unselected"
+            android:textColor="#6B7280"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnAdd500ml"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="+500 мл"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_water_unselected"
+            android:textColor="#6B7280"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Сбросить"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_water_reset"
+            android:textColor="#EF4444"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnWaterSettings"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="⚙️ Настройки"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_water_unselected"
+            android:textColor="#6B7280"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Текущий лимит: 4000 мл"
+        android:textSize="12sp"
+        android:textColor="#6B7280"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

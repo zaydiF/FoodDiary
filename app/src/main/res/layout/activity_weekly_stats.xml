@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#F8FAFC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Заголовок с градиентом -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/gradient_header"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📈 Статистика за неделю"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvWeekRange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Неделя: 15-21 декабря"
+                android:textSize="14sp"
+                android:textColor="#E0F2FE"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- График калорий -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="24dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔥 Калории по дням"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#1F2937"
+                android:layout_marginBottom="16dp"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chartCalories"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+        </LinearLayout>
+
+        <!-- Общая статистика -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="24dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📊 Общая статистика"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#1F2937"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvTotalCalories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14,000"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="#10B981"/>
+                    />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="#F3F4F6"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvAverageCalories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2,000"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="#10B981"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Статистика БЖУ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Белки"
+                    android:textSize="14sp"
+                    android:textColor="#6B7280"/>
+                <TextView
+                    android:id="@+id/tvAverageProtein"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="560г"
+                    android:textSize="14sp"
+                    android:textColor="#1F2937"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Углеводы"
+                    android:textSize="14sp"
+                    android:textColor="#6B7280"/>
+                <TextView
+                    android:id="@+id/tvAverageCarbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2,100г"
+                    android:textSize="14sp"
+                    android:textColor="#1F2937"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Жиры"
+                    android:textSize="14sp"
+                    android:textColor="#6B7280"/>
+                <TextView
+                    android:id="@+id/tvAverageFat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="700г"
+                    android:textSize="14sp"
+                    android:textColor="#1F2937"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Лучшие дни -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="24dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⭐ Лучшие и худшие дни"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#1F2937"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvBestDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Лучший день: Понедельник (1,500 ккал)"
+                android:textSize="14sp"
+                android:textColor="#10B981"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvWorstDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Худший день: Суббота (2,800 ккал)"
+                android:textSize="14sp"
+                android:textColor="#EF4444"/>
+        </LinearLayout>
+
+        <!-- Кнопка назад -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Назад"
+            android:textSize="16sp"
+            android:background="#10B981"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
